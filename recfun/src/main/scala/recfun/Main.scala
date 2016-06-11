@@ -24,26 +24,27 @@ object Main {
    */
   def balance(chars: List[Char]): Boolean = {
     var counter = 0
-      def find(charsEdited: List[Char]): Boolean = {
-        if (charsEdited.isEmpty) return counter==0
-        if (charsEdited.head == '(') counter = counter + 1
-        else if (charsEdited.head == ')') counter = counter -1
+    def find(charsEdited: List[Char]): Boolean = {
+      if (charsEdited.isEmpty) return counter == 0
+      if (charsEdited.head == '(') counter = counter + 1
+      else if (charsEdited.head == ')') counter = counter - 1
 
-        if (counter < 0) false
-        else find(charsEdited.tail)
-      }
-    find (chars)
+      if (counter < 0) false
+      else find(charsEdited.tail)
+    }
+    find(chars)
   }
 
   /**
    * Exercise 3
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    if (money == 0)  1
-    else if (money < 0)  0
-    else if (coins.isEmpty)  0
-    else{
-    countChange(money - coins.head, coins) + countChange(money, coins.tail)}
+    if (money == 0) 1
+    else if (money < 0) 0
+    else if (coins.isEmpty) 0
+    else {
+      countChange(money - coins.head, coins) + countChange(money, coins.tail)
+    }
 
 
   }

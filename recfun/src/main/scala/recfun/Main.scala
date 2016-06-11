@@ -24,7 +24,7 @@ object Main {
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    var counter = 0
+    var counter: Int = 0
     def find(charsEdited: List[Char]): Boolean = {
       if (charsEdited.isEmpty) counter == 0
       if (charsEdited.head == '(') counter = counter + 1

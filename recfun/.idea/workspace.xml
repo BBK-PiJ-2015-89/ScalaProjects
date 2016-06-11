@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c2870bd-754d-4ace-a2ff-9577465ae28d" name="Default" comment="Checking returns">
+    <list default="true" id="5c2870bd-754d-4ace-a2ff-9577465ae28d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="progfun1-recfun.iws" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37062937">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.48601398">
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -710,7 +708,7 @@
       <created>1465677356909</created>
       <option name="number" value="Default" />
       <updated>1465677356909</updated>
-      <workItem from="1465677359523" duration="6702000" />
+      <workItem from="1465677359523" duration="7090000" />
     </task>
     <task id="LOCAL-00001" summary="test commit&#10;&#10;">
       <created>1465680087412</created>
@@ -742,11 +740,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465685087877</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removing returns to check if it solves checker problem.">
+      <created>1465686056974</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1465686056974</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6702000" />
+    <option name="totallyTimeSpent" value="7090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -791,7 +795,8 @@
     <MESSAGE value="some reformatting." />
     <MESSAGE value="changing base case of pascal" />
     <MESSAGE value="Checking returns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checking returns" />
+    <MESSAGE value="removing returns to check if it solves checker problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="removing returns to check if it solves checker problem." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -836,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37062937">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.48601398">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>

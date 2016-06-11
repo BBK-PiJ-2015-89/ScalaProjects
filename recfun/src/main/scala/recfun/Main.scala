@@ -14,6 +14,7 @@ object Main {
    * Exercise 1
    */
   def pascal(c: Int, r: Int): Int = {
+    if (c == 0 || r==c) return 1
     if (r == 0) {
       if (c == 0) 1 else 0
     } else pascal(c - 1, r - 1) + pascal(c, r - 1)

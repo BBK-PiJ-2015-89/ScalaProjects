@@ -21,4 +21,8 @@ class PascalSuite extends FunSuite {
       assert(pascal(1,3) === 3)
   }
 
+  test("pascal: col=0,row=0") {
+    assert(pascal(0,0) === 1)
+  }
+
 }

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2870bd-754d-4ace-a2ff-9577465ae28d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/recfun/PascalSuite.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/recfun/PascalSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/recfun/PascalSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/recfun/PascalSuite.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="progfun1-recfun.iws" />
@@ -45,8 +40,8 @@
       <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53422374">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.7178631">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -711,7 +706,7 @@
       <created>1465677356909</created>
       <option name="number" value="Default" />
       <updated>1465677356909</updated>
-      <workItem from="1465677359523" duration="5466000" />
+      <workItem from="1465677359523" duration="5761000" />
     </task>
     <task id="LOCAL-00001" summary="test commit&#10;&#10;">
       <created>1465680087412</created>
@@ -731,11 +726,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465683853443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changing base case of pascal">
+      <created>1465684742670</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1465684742670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5466000" />
+    <option name="totallyTimeSpent" value="5761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -778,7 +779,8 @@
     <MESSAGE value="test commit&#10;&#10;" />
     <MESSAGE value="updated first attempts&#10;" />
     <MESSAGE value="some reformatting." />
-    <option name="LAST_COMMIT_MESSAGE" value="some reformatting." />
+    <MESSAGE value="changing base case of pascal" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing base case of pascal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -815,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53422374">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.7178631">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

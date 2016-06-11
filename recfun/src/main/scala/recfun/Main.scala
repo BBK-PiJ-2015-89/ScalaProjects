@@ -36,7 +36,7 @@ object Main {
   }
 
   /**
-   * Exercise 3
+   * Exercise 3 test
    */
   def countChange(money: Int, coins: List[Int]): Int = ???
 }

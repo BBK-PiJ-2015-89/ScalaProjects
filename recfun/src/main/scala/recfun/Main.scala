@@ -14,27 +14,28 @@ object Main {
    * Exercise 1
    */
   def pascal(c: Int, r: Int): Int = {
-    if (c == 0 || r==c) 1
-    if (r == 0) {
-      if (c == 0) 1 else 0
-    } else pascal(c - 1, r - 1) + pascal(c, r - 1)
+      if (c == 0 || r == c) 1
+    else pascal(c - 1, r - 1) + pascal(c, r - 1)
   }
 
   /**
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    var counter: Int = 0
+    var counter = 0
     def find(charsEdited: List[Char]): Boolean = {
       if (charsEdited.isEmpty) counter == 0
-      if (charsEdited.head == '(') counter = counter + 1
-      else if (charsEdited.head == ')') counter = counter - 1
+      else {
+        if (charsEdited.head == '(') counter = counter + 1
+        else if (charsEdited.head == ')') counter = counter - 1
 
-      if (counter < 0) false
-      else find(charsEdited.tail)
+        if (counter < 0) false
+        else find(charsEdited.tail)
+      }
     }
     find(chars)
   }
+
 
   /**
    * Exercise 3

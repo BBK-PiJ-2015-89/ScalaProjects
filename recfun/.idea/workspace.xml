@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2870bd-754d-4ace-a2ff-9577465ae28d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.46632123">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -688,7 +685,7 @@
       <option name="number" value="Default" />
       <updated>1465677356909</updated>
       <workItem from="1465677359523" duration="8099000" />
-      <workItem from="1465726006419" duration="1248000" />
+      <workItem from="1465726006419" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="test commit&#10;&#10;">
       <created>1465680087412</created>
@@ -738,11 +735,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465726349275</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chaning balance to exclude the use of a seperate var">
+      <created>1465727430057</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1465727430057</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9347000" />
+    <option name="totallyTimeSpent" value="9786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -790,7 +793,8 @@
     <MESSAGE value="removing returns to check if it solves checker problem." />
     <MESSAGE value="changed declaration of var." />
     <MESSAGE value="updating return statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating return statements" />
+    <MESSAGE value="chaning balance to exclude the use of a seperate var" />
+    <option name="LAST_COMMIT_MESSAGE" value="chaning balance to exclude the use of a seperate var" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -867,7 +871,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/recfun/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46632123">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding />
         </state>
       </provider>

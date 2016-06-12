@@ -24,10 +24,11 @@ object Main {
   def balance(chars: List[Char]): Boolean = {
     def find(charsEdited: List[Char], counter: Int): Boolean = {
       if (charsEdited.isEmpty) counter == 0
+      else if (counter < 0) false
       else {
         if (charsEdited.head == '(') find(charsEdited.tail, counter + 1)
         else if (charsEdited.head == ')') find(charsEdited.tail, counter - 1)
-        else find (charsEdited.tail, counter)
+        else find(charsEdited.tail, counter)
       }
     }
     find(chars, 0)

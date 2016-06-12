@@ -14,7 +14,7 @@ object Main {
    * Exercise 1
    */
   def pascal(c: Int, r: Int): Int = {
-      if (c == 0 || r == c) 1
+    if (c == 0 || r == c) 1
     else pascal(c - 1, r - 1) + pascal(c, r - 1)
   }
 
@@ -22,18 +22,15 @@ object Main {
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    var counter = 0
-    def find(charsEdited: List[Char]): Boolean = {
+    def find(charsEdited: List[Char], counter: Int): Boolean = {
       if (charsEdited.isEmpty) counter == 0
       else {
-        if (charsEdited.head == '(') counter = counter + 1
-        else if (charsEdited.head == ')') counter = counter - 1
-
-        if (counter < 0) false
-        else find(charsEdited.tail)
+        if (charsEdited.head == '(') find(charsEdited.tail, counter + 1)
+        else if (charsEdited.head == ')') find(charsEdited.tail, counter - 1)
+        else find (charsEdited.tail, counter)
       }
     }
-    find(chars)
+    find(chars, 0)
   }
 
 

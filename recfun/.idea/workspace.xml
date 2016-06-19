@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2870bd-754d-4ace-a2ff-9577465ae28d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/recfun/Main$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/recfun/Main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="progfun1-recfun.iws" />
@@ -685,7 +684,7 @@
       <option name="number" value="Default" />
       <updated>1465677356909</updated>
       <workItem from="1465677359523" duration="8099000" />
-      <workItem from="1465726006419" duration="1687000" />
+      <workItem from="1465726006419" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="test commit&#10;&#10;">
       <created>1465680087412</created>
@@ -741,11 +740,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465727430057</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding back the interim check of counter.">
+      <created>1465727876051</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1465727876051</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9786000" />
+    <option name="totallyTimeSpent" value="10346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -794,7 +799,8 @@
     <MESSAGE value="changed declaration of var." />
     <MESSAGE value="updating return statements" />
     <MESSAGE value="chaning balance to exclude the use of a seperate var" />
-    <option name="LAST_COMMIT_MESSAGE" value="chaning balance to exclude the use of a seperate var" />
+    <MESSAGE value="adding back the interim check of counter." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding back the interim check of counter." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

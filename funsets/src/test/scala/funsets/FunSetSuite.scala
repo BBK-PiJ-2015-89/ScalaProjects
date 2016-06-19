@@ -146,4 +146,20 @@ class FunSetSuite extends FunSuite {
     }
   }
 
+  test("Exists test"){
+    new TestSets {
+      assert(exists(s4, x => x == 1))
+      assert(!exists(s2, x => x == 1))
+    }
+  }
+
+  test("Map Test"){
+    new TestSets {
+      val y = map(s5, x => x+1)
+      assert(contains(y, 3))
+      assert(contains(y, 4))
+      assert(!contains(y, 2))
+    }
+  }
 }
+

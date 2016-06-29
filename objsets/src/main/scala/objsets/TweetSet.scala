@@ -65,7 +65,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def mostRetweeted: Tweet = ???
+    def mostRetweeted: Tweet
   
   /**
    * Returns a list containing all tweets of this set, sorted by retweet count
@@ -76,7 +76,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-    def descendingByRetweet: TweetList = ???
+    def descendingByRetweet: TweetList
   
   /**
    * The following methods are already implemented
@@ -104,6 +104,8 @@ abstract class TweetSet {
    * This method takes a function and applies it to every element in the set.
    */
   def foreach(f: Tweet => Unit): Unit
+
+  def isEmpty(): Boolean
 }
 
 class Empty extends TweetSet {
@@ -124,6 +126,31 @@ class Empty extends TweetSet {
   def foreach(f: Tweet => Unit): Unit = ()
 
   def union(x: TweetSet): TweetSet = x
+
+
+  /**
+   * Returns the tweet from this set which has the greatest retweet count.
+   *
+   * Calling `mostRetweeted` on an empty set should throw an exception of
+   * type `java.util.NoSuchElementException`.
+   *
+   * Question: Should we implment this method here, or should it remain abstract
+   * and be implemented in the subclasses?
+   */
+  override def mostRetweeted: Tweet = throw new java.util.NoSuchElementException
+
+  /**
+   * Returns a list containing all tweets of this set, sorted by retweet count
+   * in descending order. In other words, the head of the resulting list should
+   * have the highest retweet count.
+   *
+   * Hint: the method `remove` on TweetSet will be very useful.
+   * Question: Should we implment this method here, or should it remain abstract
+   * and be implemented in the subclasses?
+   */
+  override def descendingByRetweet: TweetList = Nil
+
+  override def isEmpty(): Boolean = true
 }
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
@@ -133,7 +160,16 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
       right.filterAcc(p, left.filterAcc(p, acc.incl(elem)))
       else right.filterAcc(p, left.filterAcc(p, acc))
     }
-  
+
+  override def isEmpty(): Boolean = false
+
+  def mostRetweeted: Tweet = {
+     val x:TweetSet = right union left
+    if(x.isEmpty() || elem.retweets > x.mostRetweeted.retweets) elem
+    else x.mostRetweeted
+
+  }
+
     
   /**
    * The following methods are already implemented
@@ -162,7 +198,20 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   }
 
   def union(x: TweetSet): TweetSet = {
-    left union right union x incl elem
+    (left union (right) union x incl elem )
+  }
+
+  /**
+   * Returns a list containing all tweets of this set, sorted by retweet count
+   * in descending order. In other words, the head of the resulting list should
+   * have the highest retweet count.
+   *
+   * Hint: the method `remove` on TweetSet will be very useful.
+   * Question: Should we implment this method here, or should it remain abstract
+   * and be implemented in the subclasses?
+   */
+  override def descendingByRetweet: TweetList = {
+    new Cons(mostRetweeted, remove(mostRetweeted).descendingByRetweet)
   }
 }
 
@@ -192,14 +241,14 @@ object GoogleVsApple {
   val google = List("android", "Android", "galaxy", "Galaxy", "nexus", "Nexus")
   val apple = List("ios", "iOS", "iphone", "iPhone", "ipad", "iPad")
 
-    lazy val googleTweets: TweetSet = ???
-  lazy val appleTweets: TweetSet = ???
+    lazy val googleTweets: TweetSet = TweetReader.allTweets.filter(t => google.exists(x => t.text.contains(x)))
+  lazy val appleTweets: TweetSet = TweetReader.allTweets.filter(t => apple.exists(x => t.text.contains(x)))
   
   /**
    * A list of all tweets mentioning a keyword from either apple or google,
    * sorted by the number of retweets.
    */
-     lazy val trending: TweetList = ???
+     lazy val trending: TweetList = googleTweets.union(appleTweets).descendingByRetweet
   }
 
 object Main extends App {

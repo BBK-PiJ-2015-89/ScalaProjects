@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1b89456c-95f5-4808-898b-8032da297077" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala" afterPath="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="progfun1-objsets.iws" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="TweetSet.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27272728">
-              <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.61752987">
+              <caret line="167" column="62" selection-start-line="167" selection-start-column="62" selection-end-line="167" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -627,7 +626,7 @@
       <created>1466973701413</created>
       <option name="number" value="Default" />
       <updated>1466973701413</updated>
-      <workItem from="1466973706944" duration="10858000" />
+      <workItem from="1466973706944" duration="11387000" />
     </task>
     <task id="LOCAL-00001" summary="update filter and filter acc">
       <created>1466974939729</created>
@@ -647,11 +646,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466978264855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="question 4 completed.">
+      <created>1467236690097</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467236690097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10858000" />
+    <option name="totallyTimeSpent" value="11387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
@@ -702,7 +707,8 @@
     <MESSAGE value="update filter and filter acc" />
     <MESSAGE value="filteracc updated" />
     <MESSAGE value="union implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="union implemented." />
+    <MESSAGE value="question 4 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="question 4 completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -723,8 +729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728">
-          <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.61752987">
+          <caret line="167" column="62" selection-start-line="167" selection-start-column="62" selection-end-line="167" selection-end-column="62" />
           <folding />
         </state>
       </provider>
